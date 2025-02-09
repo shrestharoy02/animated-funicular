@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto Mono", serif;
+}
+.categories {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.categories div {
+  border: 2px dashed black;
+  padding: 5px;
+  min-width: 100px;
+  min-height: 100px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.laptop {
+  background: #940b92;
+  color: aliceblue;
+}
+.camera {
+  background: #da0c81;
+  color: aliceblue;
+}
+.shoes {
+  background: #e95793;
+  color: aliceblue;
+}
