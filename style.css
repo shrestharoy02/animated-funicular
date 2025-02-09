@@ -1,38 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
-  font-family: "Roboto Mono", serif;
+  font-family: "Roboto Mono", monospace;
+  background-color: #f4f4f4;
 }
+
 .categories {
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 15px;
+  padding: 10px;
 }
+
 .categories div {
   border: 2px dashed black;
-  padding: 5px;
-  min-width: auto;
-  min-height: auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 300px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
+
+.categories div:hover {
+  transform: scale(1.05);
+}
+
 .laptop {
   background: #940b92;
   color: aliceblue;
 }
+
 .camera {
   background: #da0c81;
   color: aliceblue;
 }
+
 .shoes {
   background: #e95793;
   color: aliceblue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .categories {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .categories div {
+    font-size: 1.3rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories div {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
 }
