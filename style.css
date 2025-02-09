@@ -16,8 +16,8 @@ body {
 .categories div {
   border: 2px dashed black;
   padding: 5px;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: auto;
+  min-height: auto;
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
